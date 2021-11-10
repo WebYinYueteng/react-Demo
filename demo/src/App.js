@@ -1,18 +1,12 @@
+import React from 'react';
 
-import React, { Component, lazy,  Suspense } from "react";
-import { withRouter, NavLink, Switch, Redirect, Route } from "react-router-dom";
-const Home = lazy(() => import('./views/Home'))
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <Suspense fallback={<div>Loading...</div>}>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </Suspense>
-    )
-  }
-}
+import Router from '@/router/';
 
+const App = () => (
+  <BrowserRouter>
+    <Router />
+  </BrowserRouter>
+)
 export default App;

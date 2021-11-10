@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Header from "@/components/Header";
 class View extends Component {
 	constructor(props) {
 		super(props);
@@ -7,8 +6,7 @@ class View extends Component {
 	render() {
 		return (
 			<div>
-				<Header />
-				<h3>首页</h3>
+				<h3>头部</h3>
 			</div>
 		);
 	}
